@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<h1>Home</h1>
+<form action="{% url 'result' %}">
+    {% csrf_token %}
+
+    Area: <input type="text" required name="area"><br>
+    Radius: <input type="text" required name="radius"><br>
+    Perimeter: <input type="text" required name="perimeter"><br>
+    Concavity: <input type="text" required name="concavity"><br>
+
+    <input type="submit" name="" value="submit">
+
+</form>
+</body>
+</html>
